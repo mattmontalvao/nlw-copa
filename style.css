@@ -4,133 +4,152 @@
   box-sizing: border-box;
 }
 
-:root {
-  --card-color-primary: #f7dd43;
-  --card-title-border-color: #746615;
-  --card-bg-color: #1d1c19;
-  --bg: url(./assets/bg-yellow.svg);
-}
-
-body.blue {
-  --card-color-primary: #338af3;
-  --card-title-border-color: #338af3;
-  --card-bg-color: #202024;
-  --bg: url(./assets/bg-blue.svg);
-}
-
-body.green {
-  --card-color-primary: #047c3f;
-  --card-title-border-color: #047c3f;
-  --card-bg-color: #1a1f1b;
-  --bg: url(./assets/bg-green.svg);
-}
+/* :root {
+  --card-color-primary: #F07A30;
+  --card-title-border-color: #F07A30;
+  --card-bg-color: #ff00ff;
+  --bg: url(./assets/bg-floral.svg);
+} */
 
 ul {
   list-style: none;
 }
 
-body {
-  background: black;
-  background-image: var(--bg);
-  background-position: top center;
+body { /* background */
+  background: white;
+  background-image: url(./assets/bg-floral.svg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 body * {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 #app {
-  /* border: 1px solid red; */
+  /* border: 3px solid #F07A30; 
+  background: black;*/
   width: fit-content;
   margin: auto;
-  padding-top: 52px;
+  margin-bottom: 50px;
 }
 
-header {
-  margin-bottom: 63px;
+header { /* logo aloha em cima */
+  padding: 50px 150px 50px 150px;
+  background-color: white;
+  margin-bottom: -120px;
+  border-left: 3px solid #F07A30;
+  border-bottom: 3px solid #F07A30;
+  border-right: 3px solid #F07A30;
   text-align: center;
 }
 
-#cards {
+ /* #cards { 
   display: flex;
   flex-direction: column;
   gap: 32px;
-}
+  flex-direction: row;
+  flex-wrap: wrap;
+} */
 
 .card {
-  padding: 32px 23px;
-  text-align: center;
+  margin-left: -50px;
+  margin-right: -50px;
+  padding: 150px 110px 150px 110px;
+  text-align: left;
 
-  background: var(--card-bg-color);
-  border-bottom: 2px solid var(--card-color-primary);
-  border-radius: 6px;
+  background: white;
+  border: 3px solid #F07A30;
 }
 
-.card h2 {
+/* .card h2 { barra laranja
   display: flex;
-  gap: 16px;
+  gap: 650px;
   justify-content: center;
   align-items: center;
 
   padding: 8px 16px;
-  border: 1px solid var(--card-title-border-color);
+  border: 1px solid #F07A30;
   border-radius: 6px;
 
   width: fit-content;
   margin-inline: auto;
-  margin-bottom: 53px;
+  margin-bottom: auto;
 
   color: #f7dd43;
-}
+} */
 
-.card h2 span {
+/* .card h2 span {  dia da semana 
   color: #e1e1e6;
   font-size: 14px;
   text-transform: uppercase;
+} */
+
+.card h2 {
+  padding: 0px;
+  border-bottom: 2px solid #F07A30;
+  font-size: 40px;
+  text-align: center;
+  color: #F77220;
+}
+
+.card li {
+  padding: 25px 80px;
+  border-bottom: 1px solid #8BD6F7;
+  margin-bottom: 0px;
+  font-size: 20px;    
+  font-weight: 300;
 }
 
 .card ul {
+  padding: 0px 0px 80px 0px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
-
-  width: 270px;
+  gap: 0px;
+  color: #F77220;
 }
 
-.card ul li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.card span {
+  color: #0E1921;  
 }
 
-.card ul li + li {
+.halloween {
+  color: #602949;
+}
+
+.natal {
+  color: red;
+}
+
+/* .card ul li + li { linha dividindo jogos
   padding-top: 24px;
   border-top: 1px solid #323238;
 }
 
-.card ul li strong {
+.card ul li strong { horários dos jogos
   font-weight: 900;
   font-size: 36px;
   line-height: 125%;
   color: #e1e1e6;
 }
+
 .card h2:hover,
 .card ul li strong:hover,
-.card ul li img:hover {
+.card ul li img:hover { o que faz as informações subirem com o mouse
   transform: scale(1.1);
-}
+} 
+
 .card h2,
 .card ul li strong,
 .card ul li img {
   transition: transform 0.3s;
-}
+} */
 
 .card {
   opacity: 0;
   animation: appear 0.7s forwards;
-}
+} 
 
 @keyframes appear {
   0% {
@@ -144,7 +163,6 @@ header {
 
 @media (min-width: 700px) {
   #cards {
-    max-width: 670px;
     flex-direction: row;
     flex-wrap: wrap;
   }
