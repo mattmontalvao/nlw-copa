@@ -13,8 +13,8 @@ function sabores() {
   tea = tea + 0.1
   return `
   <div class="card">
-    <h2>Chá Mate</h2>
-    <ul id="epp">
+    <ul>
+      <h2>Chá Mate</h2>
       <li><strong>
       Limão 
       </strong><br>

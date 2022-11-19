@@ -27,25 +27,10 @@ body * {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-#app {
-  /* border: 3px solid #F07A30; 
-  background: black;*/
-  width: fit-content;
-  margin: auto;
-  margin-bottom: 50px;
-}
 
-header { /* logo aloha em cima */
-  padding: 50px 150px 50px 150px;
-  background-color: white;
-  margin-bottom: -120px;
-  border-left: 3px solid #F07A30;
-  border-bottom: 3px solid #F07A30;
-  border-right: 3px solid #F07A30;
-  text-align: center;
-}
 
- /* #cards { 
+/* #cards { 
+  margin: 0px -150px 0px -150px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -53,10 +38,25 @@ header { /* logo aloha em cima */
   flex-wrap: wrap;
 } */
 
+#topLogo { /* logo aloha em cima */
+  margin: 0px 110px 0px 110px;
+  padding: 50px 10px 50px 10px;
+  background-color: white;
+  margin-bottom: -120px; 
+  border-left: 3px solid #F07A30;
+  border-bottom: 3px solid #F07A30;
+  border-right: 3px solid #F07A30;
+  text-align: center;
+}
+
+
+
 .card {
-  margin-left: -50px;
-  margin-right: -50px;
-  padding: 150px 110px 150px 110px;
+  margin: 0px 50px 50px 50px;
+  padding: 150px 30px 30px 30px;
+ /* margin-top: -120px; 
+  margin-left: 5%;
+  margin-right: 5%; */
   text-align: left;
 
   background: white;
@@ -89,25 +89,25 @@ header { /* logo aloha em cima */
 .card h2 {
   padding: 0px;
   border-bottom: 2px solid #F07A30;
-  font-size: 40px;
+  font-size: 200%;
   text-align: center;
   color: #F77220;
 }
 
-.card li {
-  padding: 25px 80px;
-  border-bottom: 1px solid #8BD6F7;
-  margin-bottom: 0px;
-  font-size: 20px;    
-  font-weight: 300;
-}
-
 .card ul {
-  padding: 0px 0px 80px 0px;
+  padding: 0px 40px 80px 40px;
   display: flex;
   flex-direction: column;
   gap: 0px;
   color: #F77220;
+}
+
+.card li {
+  padding: 20px 60px 20px 60px;
+  border-bottom: 1px solid #8BD6F7;
+  margin-bottom: 0px;
+  font-size: 20px;    
+  font-weight: 300;
 }
 
 .card span {
@@ -132,19 +132,17 @@ header { /* logo aloha em cima */
   font-size: 36px;
   line-height: 125%;
   color: #e1e1e6;
-}
+}*/
 
-.card h2:hover,
-.card ul li strong:hover,
-.card ul li img:hover { o que faz as informações subirem com o mouse
+/* .card h2:hover,
+.card li:hover {  o que faz as informações subirem com o mouse 
   transform: scale(1.1);
-} 
+} */
 
 .card h2,
-.card ul li strong,
-.card ul li img {
+.card li {
   transition: transform 0.3s;
-} */
+} 
 
 .card {
   opacity: 0;
