@@ -18,16 +18,14 @@ ul {
 body { /* background */
   background: white;
   background-image: url(./assets/bg-floral.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/*  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 body * {
   font-family: 'Josefin Sans', sans-serif;
 }
-
-
 
 /* #cards { 
   margin: 0px -150px 0px -150px;
@@ -39,21 +37,28 @@ body * {
 } */
 
 #topLogo { /* logo aloha em cima */
-  margin: 0px 110px 0px 110px;
-  padding: 50px 10px 50px 10px;
+  background-image: url(./assets/logo-aloha.svg);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
+
+  min-width: 100px;
+  min-height: 50px;
+  margin: 0% 15% 0% 15%;
+  padding: 60px 10px 60px 10px;
   background-color: white;
-  margin-bottom: -120px; 
+  margin-bottom: -100px; 
   border-left: 3px solid #F07A30;
   border-bottom: 3px solid #F07A30;
   border-right: 3px solid #F07A30;
-  text-align: center;
+
+  position:relative;
+  z-index: 5;
 }
 
-
-
 .card {
-  margin: 0px 50px 50px 50px;
-  padding: 150px 30px 30px 30px;
+  margin: 0% 5% 5% 5%;
+  padding: 150px 5% 5% 5%;
  /* margin-top: -120px; 
   margin-left: 5%;
   margin-right: 5%; */
@@ -61,6 +66,9 @@ body * {
 
   background: white;
   border: 3px solid #F07A30;
+
+  position: relative;
+  z-index: 1;
 }
 
 /* .card h2 { barra laranja
@@ -89,13 +97,13 @@ body * {
 .card h2 {
   padding: 0px;
   border-bottom: 2px solid #F07A30;
-  font-size: 200%;
+  font-size: 25px;
   text-align: center;
   color: #F77220;
 }
 
 .card ul {
-  padding: 0px 40px 80px 40px;
+  padding: 0px 0px 50px 0px;
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -103,10 +111,10 @@ body * {
 }
 
 .card li {
-  padding: 20px 60px 20px 60px;
+  padding: 3% 4% 3% 4%;
   border-bottom: 1px solid #8BD6F7;
   margin-bottom: 0px;
-  font-size: 20px;    
+  font-size: 18px;    
   font-weight: 300;
 }
 
@@ -137,12 +145,12 @@ body * {
 /* .card h2:hover,
 .card li:hover {  o que faz as informações subirem com o mouse 
   transform: scale(1.1);
-} */
+} 
 
 .card h2,
 .card li {
   transition: transform 0.3s;
-} 
+} */
 
 .card {
   opacity: 0;
