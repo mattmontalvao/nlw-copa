@@ -47,7 +47,6 @@ body * {
   margin: 0% 15% 0% 15%;
   padding: 60px 10px 60px 10px;
   background-color: white;
-  margin-bottom: -100px; 
   border-left: 3px solid #F07A30;
   border-bottom: 3px solid #F07A30;
   border-right: 3px solid #F07A30;
@@ -57,10 +56,10 @@ body * {
 }
 
 .card {
-  margin: 0% 5% 5% 5%;
-  padding: 150px 5% 5% 5%;
- /* margin-top: -120px; 
-  margin-left: 5%;
+  margin: 3% 3% 3% 3%;
+  padding: 150px 5% 160px 5%;
+ margin-top: -100px; 
+ /*  margin-left: 5%;
   margin-right: 5%; */
   text-align: left;
 
@@ -97,13 +96,11 @@ body * {
 .card h2 {
   padding: 0px;
   border-bottom: 2px solid #F07A30;
-  font-size: 25px;
   text-align: center;
   color: #F77220;
 }
 
 .card ul {
-  padding: 0px 0px 50px 0px;
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -114,7 +111,6 @@ body * {
   padding: 3% 4% 3% 4%;
   border-bottom: 1px solid #8BD6F7;
   margin-bottom: 0px;
-  font-size: 18px;    
   font-weight: 300;
 }
 
@@ -130,7 +126,73 @@ body * {
   color: red;
 }
 
-/* .card ul li + li { linha dividindo jogos
+.dropdown-menu ul{
+  border: 2px solid #F77220;
+  margin:0px 0% 10% 0%;
+  padding: 0px 0px 0px 0px;
+  list-style: none;
+  background: #8BD6F7;
+  align-items: center;
+}
+.dropdown-menu .dropdown li{
+  border-bottom: 2px solid #F77220;
+}
+.dropdown-menu .dropdown li.last{
+  border-bottom: 0px;
+}
+.dropdown-menu ul li {
+  display: inline-block;
+  position: relative;
+  font-weight: 400;
+}
+.dropdown-menu ul li a {
+  display: block;
+  color: #0E1921;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+}
+.dropdown-menu ul li ul.dropdown li {
+  display: block;
+}
+.dropdown-menu ul li ul.dropdown {
+  width: 200%;
+  background: #8BD6F7;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+.dropdown-menu ul li a:hover {
+  background: #8BD6F7;
+}
+.dropdown-menu ul li:hover ul.dropdown {
+  display: block;
+}
+
+/* .price {
+  margin: 0% 0% 10% 0%;
+  border-bottom: 2px solid #F77220;
+  min-width: auto;
+  text-align: center;
+}
+
+.price ul {
+  display: flex;
+  display: inline;
+}
+
+.price li {
+  margin: 5px;
+  padding: 5px 10px 0px 10px;
+  border: 2px solid #F77220;
+  font-weight: 400;
+  color: #0E1921;
+  background-color: #8BD6F7;
+  display: flex;
+  display: inline;
+} 
+
+ .card ul li + li { linha dividindo jogos
   padding-top: 24px;
   border-top: 1px solid #323238;
 }
@@ -168,8 +230,20 @@ body * {
 }
 
 @media (min-width: 700px) {
-  #cards {
+  #cards{
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 700px) {
+  h2 {
+    font-size: 27px;
+  }
+}
+
+@media (min-width: 700px) {
+  li {
+    font-size: 20px;
   }
 }

@@ -58,6 +58,20 @@ function sabores() {
       </li>
     </ul>
 
+    <nav class="dropdown-menu">
+    <ul>
+      <li>
+        <a>Valores ▼</a>
+        <ul class="dropdown">
+          <li><a>500mL - R$ 12,00</a></li>
+          <li><a>1L - R$ 18,00</a></li>
+          <li><a>2L - R$ 25,00</a></li>
+          <li class="last"><a>Atacado - Fale Conosco</a></li>
+        </ul>
+      </li>
+    </ul>
+    </nav>
+
     <ul>
       <h2>Chá Preto</h2>
       <li><strong>
@@ -66,6 +80,15 @@ function sabores() {
       <span>Chá preto adoçado, batido com limão siciliano.</span>
       </li>
     </ul>
+
+    <h3 class="price">
+      <ul>
+        <li>500mL - R$ 12,00</li>
+        <li>1L - R$ 18,00</li>
+        <li>2L - R$ 25,00</li>
+        <li>Atacado - Fale Conosco</li>
+      </ul>
+    </h3>
 
     <ul>
       <h2>Chá de Hibisco</h2>
@@ -82,6 +105,15 @@ function sabores() {
       </li>
     </ul>
 
+    <h3 class="price">
+      <ul>
+        <li>500mL - R$ 12,00</li>
+        <li>1L - R$ 18,00</li>
+        <li>2L - R$ 25,00</li>
+        <li>Atacado - Fale Conosco</li>
+      </ul>
+    </h3>
+
     <ul>
       <h2>Chá Verde</h2>
       <li><strong>
@@ -96,6 +128,15 @@ function sabores() {
       <span>Chá verde com hibisco adoçado, batido com suco de limão.</span>
       </li>
     </ul>
+
+    <h3 class="price">
+      <ul>
+        <li>500mL - R$ 12,00</li>
+        <li>1L - R$ 18,00</li>
+        <li>2L - R$ 25,00</li>
+        <li>Atacado - Fale Conosco</li>
+      </ul>
+    </h3>
 
     <ul>
       <h2>Chá de Capim-Cidreira</h2>
@@ -112,6 +153,17 @@ function sabores() {
       </li>
     </ul>
 
+
+    <h3 class="price">
+      <ul>
+        <li>500mL - R$ 12,00</li>
+        <li>1L - R$ 18,00</li>
+        <li>2L - R$ 25,00</li>
+        <li>Atacado - Fale Conosco</li>
+      </ul>
+    </h3>
+
+
     <ul>
       <h2>Edições Limitadas</h2>
       <li><strong class="halloween">
@@ -126,8 +178,34 @@ function sabores() {
       <span>Chá preto com frutas vermelhas adoçado, com um toque de limão.</span>
       </li>
     </ul>
-  </div>
+
+    <h3 class="price">
+      <ul>
+        <li>500mL - R$ 15,00</li>
+        <li>1L - R$ 20,00</li>
+        <li>2L - R$ 30,00</li>
+        <li>Atacado - Fale Conosco</li>
+      </ul>
+    </h3>
+
   `
 }
 
 document.querySelector("#cards").innerHTML = sabores()
+
+/*
+let values = 0
+function priceTag() {
+  values = values + 0.1
+  return `
+  <div class="price">
+    <ul>
+      <li>500mL - R$ 12,00</li>
+      <li>1L - R$ 18,00</li>
+      <li>2L - R$ 25,00</li>
+      <li>Atacado - Fale Conosco</li>
+    </ul>
+  </div>
+  `}
+
+  document.querySelector("#prices").innerHTML = priceTag() */
