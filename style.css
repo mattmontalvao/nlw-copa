@@ -58,7 +58,7 @@ body * {
 .card {
   margin: 3% 3% 3% 3%;
   padding: 150px 5% 160px 5%;
- margin-top: -100px; 
+  margin-top: -100px; 
  /*  margin-left: 5%;
   margin-right: 5%; */
   text-align: left;
@@ -85,9 +85,9 @@ body * {
   margin-bottom: auto;
 
   color: #f7dd43;
-} */
+} 
 
-/* .card h2 span {  dia da semana 
+ .card h2 span {  dia da semana 
   color: #e1e1e6;
   font-size: 14px;
   text-transform: uppercase;
@@ -95,20 +95,21 @@ body * {
 
 .card h2 {
   padding: 0px;
-  border-bottom: 2px solid #F07A30;
-  text-align: center;
+  border-bottom: 1px solid #8BD6F7;
+  text-align: baseline;
   color: #F77220;
 }
 
 .card ul {
   display: flex;
   flex-direction: column;
+  margin: 0% 0% 4% 0%;
   gap: 0px;
   color: #F77220;
 }
 
 .card li {
-  padding: 3% 4% 3% 4%;
+  padding: 2% 3% 2% 3%;
   border-bottom: 1px solid #8BD6F7;
   margin-bottom: 0px;
   font-weight: 300;
@@ -116,6 +117,10 @@ body * {
 
 .card span {
   color: #0E1921;  
+}
+
+.card ul li span a {
+  font-size: 16px;
 }
 
 .halloween {
@@ -128,7 +133,7 @@ body * {
 
 .dropdown-menu ul{
   border: 2px solid #F77220;
-  margin:0px 0% 10% 0%;
+  margin: 5px 35% 10% 35%;
   padding: 0px 0px 0px 0px;
   list-style: none;
   background: #8BD6F7;
@@ -169,51 +174,6 @@ body * {
   display: block;
 }
 
-/* .price {
-  margin: 0% 0% 10% 0%;
-  border-bottom: 2px solid #F77220;
-  min-width: auto;
-  text-align: center;
-}
-
-.price ul {
-  display: flex;
-  display: inline;
-}
-
-.price li {
-  margin: 5px;
-  padding: 5px 10px 0px 10px;
-  border: 2px solid #F77220;
-  font-weight: 400;
-  color: #0E1921;
-  background-color: #8BD6F7;
-  display: flex;
-  display: inline;
-} 
-
- .card ul li + li { linha dividindo jogos
-  padding-top: 24px;
-  border-top: 1px solid #323238;
-}
-
-.card ul li strong { horários dos jogos
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 125%;
-  color: #e1e1e6;
-}*/
-
-/* .card h2:hover,
-.card li:hover {  o que faz as informações subirem com o mouse 
-  transform: scale(1.1);
-} 
-
-.card h2,
-.card li {
-  transition: transform 0.3s;
-} */
-
 .card {
   opacity: 0;
   animation: appear 0.7s forwards;
@@ -230,6 +190,12 @@ body * {
 }
 
 @media (min-width: 700px) {
+  #topLogo{
+    min-height: 150px;
+  }
+}
+
+@media (min-width: 700px) {
   #cards{
     flex-direction: row;
     flex-wrap: wrap;
@@ -238,12 +204,12 @@ body * {
 
 @media (min-width: 700px) {
   h2 {
-    font-size: 27px;
+    font-size: 20px;
   }
 }
 
 @media (min-width: 700px) {
   li {
-    font-size: 20px;
+    font-size: 18px;
   }
 }

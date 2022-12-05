@@ -15,11 +15,79 @@ function sabores() {
   <div class="card">
     <ul>
       <h2>Chá Mate</h2>
-      <li><strong>
-      Limão 
-      </strong><br>
-      <span>Chá mate adoçado, com suco de limão.</span>
+      <li>
+      <span>Sabores: limão, pêssego, cajá, tangerina, cupuaçu, tamarindo, café.</span>
       </li>
+    </ul>
+
+    <ul>
+      <h2>Chá Preto</h2>
+      <li>
+      <span>Sabores: limão siciliano, cranberry.</span>
+      </li>
+    </ul>
+
+    <ul>
+      <h2>Chá de Hibisco</h2>
+      <li>
+      <span>Sabores: canela e limão.</span>
+      </li>
+    </ul>
+
+    <ul>
+      <h2>Chá Verde</h2>
+      <li>
+      <span>Sabores: Hortelã e limão, hibisco e limão.</span>
+      </li>
+    </ul>
+
+    <ul>
+      <h2>Chá de Capim-Cidreira</h2>
+      <li>
+      <span>Sabores: Manga, tangerina.</span>
+      </li>
+    </ul>
+    
+    <ul>
+      <h2>Edições Limitadas</h2>
+      <li><strong class="halloween">
+      Especial Halloween
+      </strong><br>
+      <span>Sabor: Chá mate com groselha, com um toque de limão.
+      <br><a>(Consulte valores e disponibilidade)</a></span>
+      </li>
+
+      <li><strong class="natal">
+      Especial de Natal
+      </strong><br>
+      <span>Sabor: Chá preto com cranberry.
+      <br><a>(Consulte valores e disponibilidade)</a></span>
+      </li>
+    </ul>
+
+    <nav class="dropdown-menu">
+    <ul>
+      <li>
+        <a>Valores ▼</a>
+        <ul class="dropdown">
+          <li><a>500mL - R$ 12,00</a></li>
+          <li><a>1L - R$ 18,00</a></li>
+          <li><a>2L - R$ 25,00</a></li>
+          <li class="last"><a>Atacado - Fale Conosco</a></li>
+        </ul>
+      </li>
+    </ul>
+    </nav>
+  </div>
+  `
+}
+
+document.querySelector("#cards").innerHTML = sabores()
+
+
+
+/* 
+<link rel="whatsApp" href="https://wa.me/5562982404526">
 
       <li><strong>
       Pêssego 
@@ -55,10 +123,10 @@ function sabores() {
       Café
       </strong><br>
       <span>Chá mate adoçado, batido com café 100% arábica e com um toque de limão.</span>
-      </li>
-    </ul>
+      </li> 
+      
 
-    <nav class="dropdown-menu">
+      <nav class="dropdown-menu">
     <ul>
       <li>
         <a>Valores ▼</a>
@@ -71,141 +139,5 @@ function sabores() {
       </li>
     </ul>
     </nav>
-
-    <ul>
-      <h2>Chá Preto</h2>
-      <li><strong>
-      Limão Siciliano
-      </strong><br>
-      <span>Chá preto adoçado, batido com limão siciliano.</span>
-      </li>
-    </ul>
-
-    <h3 class="price">
-      <ul>
-        <li>500mL - R$ 12,00</li>
-        <li>1L - R$ 18,00</li>
-        <li>2L - R$ 25,00</li>
-        <li>Atacado - Fale Conosco</li>
-      </ul>
-    </h3>
-
-    <ul>
-      <h2>Chá de Hibisco</h2>
-      <li><strong>
-      Canela e Limão
-      </strong><br>
-      <span>Chá de hibisco com canela adoçado, batido com limão.</span>
-      </li>
-
-      <li><strong>
-      Limão
-      </strong><br>
-      <span>Chá de hibisco adoçado, batido com suco de limão.</span>
-      </li>
-    </ul>
-
-    <h3 class="price">
-      <ul>
-        <li>500mL - R$ 12,00</li>
-        <li>1L - R$ 18,00</li>
-        <li>2L - R$ 25,00</li>
-        <li>Atacado - Fale Conosco</li>
-      </ul>
-    </h3>
-
-    <ul>
-      <h2>Chá Verde</h2>
-      <li><strong>
-      Hortelã e Limão
-      </strong><br>
-      <span>Chá verde com hortelã adoçado, batido com suco de limão.</span>
-      </li>
-
-      <li><strong>
-      Hibisco e Limão
-      </strong><br>
-      <span>Chá verde com hibisco adoçado, batido com suco de limão.</span>
-      </li>
-    </ul>
-
-    <h3 class="price">
-      <ul>
-        <li>500mL - R$ 12,00</li>
-        <li>1L - R$ 18,00</li>
-        <li>2L - R$ 25,00</li>
-        <li>Atacado - Fale Conosco</li>
-      </ul>
-    </h3>
-
-    <ul>
-      <h2>Chá de Capim-Cidreira</h2>
-      <li><strong>
-      Manga
-      </strong><br>
-      <span>Chá de capim-cidreira adoçado, batido com polpa de manga e um toque de limão.</span>
-      </li>
-
-      <li><strong>
-      Tangerina
-      </strong><br>
-      <span>Chá de capim-cidreira adoçado, batido com polpa de tangerina e um toque de limão.</span>
-      </li>
-    </ul>
-
-
-    <h3 class="price">
-      <ul>
-        <li>500mL - R$ 12,00</li>
-        <li>1L - R$ 18,00</li>
-        <li>2L - R$ 25,00</li>
-        <li>Atacado - Fale Conosco</li>
-      </ul>
-    </h3>
-
-
-    <ul>
-      <h2>Edições Limitadas</h2>
-      <li><strong class="halloween">
-      Especial Halloween
-      </strong><br>
-      <span>Chá mate com groselha adoçado, com um toque de limão.</span>
-      </li>
-
-      <li><strong class="natal">
-      Especial de Natal
-      </strong><br>
-      <span>Chá preto com frutas vermelhas adoçado, com um toque de limão.</span>
-      </li>
-    </ul>
-
-    <h3 class="price">
-      <ul>
-        <li>500mL - R$ 15,00</li>
-        <li>1L - R$ 20,00</li>
-        <li>2L - R$ 30,00</li>
-        <li>Atacado - Fale Conosco</li>
-      </ul>
-    </h3>
-
-  `
-}
-
-document.querySelector("#cards").innerHTML = sabores()
-
-/*
-let values = 0
-function priceTag() {
-  values = values + 0.1
-  return `
-  <div class="price">
-    <ul>
-      <li>500mL - R$ 12,00</li>
-      <li>1L - R$ 18,00</li>
-      <li>2L - R$ 25,00</li>
-      <li>Atacado - Fale Conosco</li>
-    </ul>
-  </div>
-  `}
-
-  document.querySelector("#prices").innerHTML = priceTag() */
+      
+      */
