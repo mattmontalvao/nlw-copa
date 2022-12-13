@@ -4,40 +4,29 @@
   box-sizing: border-box;
 }
 
-/* :root {
-  --card-color-primary: #F07A30;
-  --card-title-border-color: #F07A30;
-  --card-bg-color: #ff00ff;
+:root {
+  --blue: #8BD6F7;
+  --orange: #F07A30;
+  --dark-blue: #0E1921;
   --bg: url(./assets/bg-floral.svg);
-} */
+  --logo: url(./assets/logo-aloha.svg);
+}
 
 ul {
   list-style: none;
 }
 
-body { /* background */
+body {
   background: white;
-  background-image: url(./assets/bg-floral.svg);
-/*  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
+  background-image: var(--bg);
 }
 
 body * {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-/* #cards { 
-  margin: 0px -150px 0px -150px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  flex-direction: row;
-  flex-wrap: wrap;
-} */
-
 #topLogo { /* logo aloha em cima */
-  background-image: url(./assets/logo-aloha.svg);
+  background-image: var(--logo);
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: center;
@@ -47,9 +36,9 @@ body * {
   margin: 0% 15% 0% 15%;
   padding: 60px 10px 60px 10px;
   background-color: white;
-  border-left: 3px solid #F07A30;
-  border-bottom: 3px solid #F07A30;
-  border-right: 3px solid #F07A30;
+  border-left: 3px solid var(--orange);
+  border-bottom: 3px solid var(--orange);
+  border-right: 3px solid var(--orange);
 
   position:relative;
   z-index: 5;
@@ -64,63 +53,41 @@ body * {
   text-align: left;
 
   background: white;
-  border: 3px solid #F07A30;
+  border: 3px solid var(--orange);
 
   position: relative;
   z-index: 1;
 }
 
-/* .card h2 { barra laranja
-  display: flex;
-  gap: 650px;
-  justify-content: center;
-  align-items: center;
-
-  padding: 8px 16px;
-  border: 1px solid #F07A30;
-  border-radius: 6px;
-
-  width: fit-content;
-  margin-inline: auto;
-  margin-bottom: auto;
-
-  color: #f7dd43;
-} 
-
- .card h2 span {  dia da semana 
-  color: #e1e1e6;
-  font-size: 14px;
-  text-transform: uppercase;
-} */
-
 .card h2 {
   padding: 0px;
-  border-bottom: 1px solid #8BD6F7;
+  border-bottom: 1px solid var(--orange);
+  font-size: 16px;
   text-align: baseline;
-  color: #F77220;
+  color: var(--orange);
 }
 
 .card ul {
   display: flex;
   flex-direction: column;
-  margin: 0% 0% 4% 0%;
+  margin: 0% 0% 5% 0%;
   gap: 0px;
-  color: #F77220;
+  color: var(--orange);
 }
 
 .card li {
-  padding: 2% 3% 2% 3%;
-  border-bottom: 1px solid #8BD6F7;
+  padding: 3% 4% 3% 4%;
+  border-bottom: 1px solid var(--blue);
   margin-bottom: 0px;
   font-weight: 300;
 }
 
 .card span {
-  color: #0E1921;  
+  color: var(--dark-blue);  
 }
 
 .card ul li span a {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .halloween {
@@ -132,15 +99,15 @@ body * {
 }
 
 .dropdown-menu ul{
-  border: 2px solid #F77220;
-  margin: 5px 35% 10% 35%;
+  border: 2px solid var(--orange);
+  margin: 5px 20% 10% 20%;
   padding: 0px 0px 0px 0px;
   list-style: none;
-  background: #8BD6F7;
+  background: var(--blue);
   align-items: center;
 }
 .dropdown-menu .dropdown li{
-  border-bottom: 2px solid #F77220;
+  border-bottom: 2px solid var(--orange);
 }
 .dropdown-menu .dropdown li.last{
   border-bottom: 0px;
@@ -162,22 +129,22 @@ body * {
 }
 .dropdown-menu ul li ul.dropdown {
   width: 200%;
-  background: #8BD6F7;
+  background: var(--blue);
   position: absolute;
   z-index: 999;
   display: none;
 }
 .dropdown-menu ul li a:hover {
-  background: #8BD6F7;
+  background: var(--blue);
 }
 .dropdown-menu ul li:hover ul.dropdown {
   display: block;
 }
 
-.card {
+.card ul {
   opacity: 0;
   animation: appear 0.7s forwards;
-} 
+}
 
 @keyframes appear {
   0% {
@@ -204,12 +171,12 @@ body * {
 
 @media (min-width: 700px) {
   h2 {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 700px) {
   li {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
