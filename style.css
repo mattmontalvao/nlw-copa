@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #8BD6F7;
+  --orange: #F07A30;
+  --dark-blue: #0E1921;
+  --bg: url(./assets/bg-floral.svg);
+  --logo: url(./assets/logo-aloha.svg);
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: white;
+  background-image: var(--bg);
+}
+
+body * {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#topLogo { /* logo aloha em cima */
+  background-image: var(--logo);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
+
+  min-width: 100px;
+  min-height: 50px;
+  margin: 0% 15% 0% 15%;
+  padding: 60px 10px 60px 10px;
+  background-color: white;
+  border-left: 3px solid var(--orange);
+  border-bottom: 3px solid var(--orange);
+  border-right: 3px solid var(--orange);
+
+  position:relative;
+  z-index: 5;
+}
+
+.card {
+  margin: 3% 3% 3% 3%;
+  padding: 150px 5% 160px 5%;
+  margin-top: -100px; 
+ /*  margin-left: 5%;
+  margin-right: 5%; */
+  text-align: left;
+
+  background: white;
+  border: 3px solid var(--orange);
+
+  position: relative;
+  z-index: 1;
+}
+
+.card h2 {
+  padding: 0px;
+  border-bottom: 1px solid var(--orange);
+  font-size: 16px;
+  text-align: baseline;
+  color: var(--orange);
+}
+
+.card ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0% 0% 5% 0%;
+  gap: 0px;
+  color: var(--orange);
+}
+
+.card li {
+  padding: 3% 4% 3% 4%;
+  border-bottom: 1px solid var(--blue);
+  margin-bottom: 0px;
+  font-weight: 300;
+}
+
+.card span {
+  color: var(--dark-blue);  
+}
+
+.card ul li span a {
+  font-size: 14px;
+}
+
+.halloween {
+  color: #602949;
+}
+
+.natal {
+  color: red;
+}
+
+.dropdown-menu ul{
+  border: 2px solid var(--orange);
+  margin: 5px 20% 10% 20%;
+  padding: 0px 0px 0px 0px;
+  list-style: none;
+  background: var(--blue);
+  align-items: center;
+}
+.dropdown-menu .dropdown li{
+  border-bottom: 2px solid var(--orange);
+}
+.dropdown-menu .dropdown li.last{
+  border-bottom: 0px;
+}
+.dropdown-menu ul li {
+  display: inline-block;
+  position: relative;
+  font-weight: 400;
+}
+.dropdown-menu ul li a {
+  display: block;
+  color: #0E1921;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+}
+.dropdown-menu ul li ul.dropdown li {
+  display: block;
+}
+.dropdown-menu ul li ul.dropdown {
+  width: 200%;
+  background: var(--blue);
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+.dropdown-menu ul li a:hover {
+  background: var(--blue);
+}
+.dropdown-menu ul li:hover ul.dropdown {
+  display: block;
+}
+
+.card ul {
+  opacity: 0;
+  animation: appear 0.7s forwards;
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 700px) {
+  #topLogo{
+    min-height: 150px;
+  }
+}
+
+@media (min-width: 700px) {
+  #cards{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 700px) {
+  h2 {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 700px) {
+  li {
+    font-size: 16px;
+  }
+}
